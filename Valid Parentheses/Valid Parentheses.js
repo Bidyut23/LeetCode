@@ -1,21 +1,24 @@
 * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
-  const hashMap = { "(": ")", "{": "}", "[": "]" };
-  const stack = [];
-  for (let ch of s) {
-      if(hashMap[ch]){
-          // ch is an opening bracket
-          stack.push(hashMap[ch]);
-           } else if (stack.length > 0 && stack[stack.length - 1] === ch){
-               // ch is a closing bracket and top of stack matches
-               stack.pop();
-           } else {
-               // ch is a closing bracket and tio of the stack doesn't match
-               return false;
-           }
-  }
-  return stack.length === 0;
+var isValid = function(s){
+    let stack = [];
+    for(let i=0; i< s.length; i++){
+        let top = stack[stack.length -1]
+        if(s[i] == "(" ||s[i]== "["){
+        stack.push(s[i])
+        }
+        if (s[i] == ")" &&  top == "(" || s[i] == "}" &&  top == "{" || s[i]== "]"&&  top == "["){
+                stack.pop()
+
+        }else return false
+    }
+    if(stack.length == 0){
+        return true
+    }
+    if(stack.length !=0){
+        return false
+    }
+
    
 };
