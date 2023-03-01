@@ -19,4 +19,9 @@ var isValid = function(s){
     if(stack.length !=0){
         return false
     }
+<<<<<<< HEAD
+=======
+
+   
+>>>>>>> 410fba5d17c4a0e3a34b8d591f2260798827850e
 };
