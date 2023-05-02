@@ -1,8 +1,6 @@
-12. Integer to Roman
+## Integer to Roman
 Medium
-5.5K
-5.1K
-Companies
+
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol       Value
@@ -24,12 +22,12 @@ Given an integer, convert it to a roman numeral.
 
  
 
-Example 1:
+## Example 1:
 
 Input: num = 3
 Output: "III"
 Explanation: 3 is represented as 3 ones.
-Example 2:
+## Example 2:
 
 Input: num = 58
 Output: "LVIII"
@@ -41,6 +39,6 @@ Output: "MCMXCIV"
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  
 
-Constraints:
+### Constraints:
 
 1 <= num <= 3999
